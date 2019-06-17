@@ -1,6 +1,6 @@
 import React from "react";
 
-const context = React.createContext({depth: 0});
+const context = React.createContext({realDepth: 0});
 
 const { Consumer, Provider } = context;
 

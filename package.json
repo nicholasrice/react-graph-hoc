@@ -1,35 +1,60 @@
 {
-  "name": "react-jss-dependency-graph",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@types/react": "^16.8.20"
-  }
+    "name": "react-jss-dependency-graph",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-scripts": "3.0.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "jest": {
+        "testURL": "http://localhost",
+        "transform": {
+            "^.+\\.tsx?$": "ts-jest",
+            "^.+\\.jsx?$": "babel-jest"
+        },
+        "transformIgnorePatterns": [
+            "!<rootDir>/node_modules/lodash-es",
+            "<rootDir>/node_modules/jss-*",
+            "<rootDir>/node_modules/css-vendor"
+        ],
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json"
+        ],
+        "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.5",
+        "@types/jest": "^24.0.14",
+        "@types/lodash": "^4.14.134",
+        "@types/react": "^16.8.20",
+        "lodash": "^4.17.11",
+        "ts-jest": "^24.0.2",
+        "typescript": "^3.5.2"
+    }
 }
